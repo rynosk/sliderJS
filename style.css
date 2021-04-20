@@ -1,0 +1,125 @@
+@-webkit-keyframes slideIn {
+  from {
+    -webkit-transform: translateX(100vw);
+            transform: translateX(100vw);
+  }
+  to {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+}
+
+@keyframes slideIn {
+  from {
+    -webkit-transform: translateX(100vw);
+            transform: translateX(100vw);
+  }
+  to {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+}
+
+html body a {
+  text-decoration: none;
+}
+
+html body header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+html body header a:link {
+  color: white;
+}
+
+html body header a:visited {
+  color: gray;
+}
+
+html body header .header-conteiner {
+  position: fixed;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 84vw;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 3vh 0;
+  color: white;
+  z-index: 100;
+}
+
+html body header .header-conteiner h1 {
+  font-size: 2rem;
+}
+
+html body header .header-conteiner nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+html body header .header-conteiner nav ul li {
+  font-size: 1.6rem;
+  margin-left: 2vw;
+}
+
+html body main section#slider_area {
+  width: 100vw;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+}
+
+html body main section#slider_area .slider {
+  background-size: cover;
+  background-repeat: no-repeat;
+  -webkit-transition: all 1000ms 0s ease;
+  transition: all 1000ms 0s ease;
+}
+
+html body main section#slider_area .slider.slider1 {
+  background-image: url(/slider-img/fv-bgi_01.png);
+  width: 100%;
+  -webkit-animation-name: slideIn;
+          animation-name: slideIn;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  overflow: hidden;
+}
+
+html body main section#slider_area .slider.slider2 {
+  background-image: url(/slider-img/fv-bgi_02.png);
+}
+
+html body main section#slider_area .slider.slider3 {
+  background-image: url(/slider-img/fv-bgi_03.png);
+}
+
+html body main section#slider_area .textbox {
+  position: absolute;
+  top: 54vh;
+  left: 8vw;
+  color: white;
+}
+
+html body main section#slider_area .textbox h2 {
+  font-size: 5.2rem;
+}
+
+html body main section#slider_area .textbox p {
+  font-size: 3rem;
+  margin-left: 1.5rem;
+}
+/*# sourceMappingURL=style.css.map */

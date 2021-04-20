@@ -1,0 +1,105 @@
+@keyframes slideIn{
+  from{
+    transform: translateX(100vw);
+  }
+  to{
+    transform: translateX(0);
+  }
+}
+
+
+html {
+
+  body {
+    a {
+      text-decoration: none;
+    }
+
+    header {
+      display: flex;
+      justify-content: center;
+
+      a:link {
+        color: white;
+      }
+
+      a:visited {
+        color: gray;
+      }
+
+      .header-conteiner {
+        position: fixed;
+        display: flex;
+        justify-content: space-between;
+        width: 84vw;
+        align-items: center;
+        margin: 3vh 0;
+        color: white;
+        z-index: 100;
+
+
+        h1 {
+          font-size: 2rem;
+        }
+
+        nav {
+          ul {
+            display: flex;
+
+            li {
+              font-size: 1.6rem;
+              margin-left: 2vw;
+            }
+          }
+        }
+      }
+    }
+
+    main {
+      section#slider_area {
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        position: relative;
+
+        .slider {
+          background-size: cover;
+          background-repeat: no-repeat;
+          transition: all 1000ms 0s ease;
+          
+          &.slider1 {
+            background-image: url(/slider-img/fv-bgi_01.png);
+            width: 100%;
+            animation-name: slideIn;
+            animation-duration: 1s;
+            overflow: hidden;
+          }
+          
+          &.slider2 {
+            background-image: url(/slider-img/fv-bgi_02.png);
+          }
+          
+          &.slider3 {
+            background-image: url(/slider-img/fv-bgi_03.png);
+          }
+        }
+
+        .textbox {
+          position: absolute;
+          top: 54vh;
+          left: 8vw;
+          color: white;
+
+          h2 {
+            font-size: 5.2rem;
+          }
+
+          p {
+            font-size: 3rem;
+            margin-left: 1.5rem;
+          }
+        }
+      }
+    }
+  }
+}
